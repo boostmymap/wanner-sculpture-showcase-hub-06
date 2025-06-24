@@ -19,6 +19,20 @@ const Hero = () => {
             Découvrez des œuvres sculpturales uniques qui transforment l'espace et éveillent les sens. 
             Chaque création raconte une histoire, chaque forme révèle une émotion.
           </p>
+
+          {/* SEO Content */}
+          <div className="mb-8 text-lg text-stone-700 max-w-3xl mx-auto">
+            <p className="mb-4">
+              <strong>Wanner</strong>, sculpteur contemporain français, crée des œuvres d'art exceptionnelles en 
+              <strong> bronze</strong>, <strong>marbre de Carrare</strong> et <strong>acier corten</strong>. 
+              Spécialisé dans la sculpture moderne et l'art contemporain, l'atelier propose des créations sur mesure 
+              pour collectionneurs, galeries d'art et espaces publics.
+            </p>
+            <p>
+              De la conception à la réalisation, chaque sculpture est façonnée avec une maîtrise artisanale 
+              exceptionnelle, alliant tradition séculaire et vision artistique contemporaine.
+            </p>
+          </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a

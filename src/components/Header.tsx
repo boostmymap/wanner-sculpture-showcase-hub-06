@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Logo from "./Logo";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,9 +18,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl font-bold bg-gradient-to-r from-amber-600 to-stone-700 bg-clip-text text-transparent">
-            SculptureByWanner
-          </div>
+          <Logo />
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
