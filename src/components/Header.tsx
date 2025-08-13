@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
@@ -8,8 +7,10 @@ const Header = () => {
 
   const navItems = [
     { label: "Accueil", href: "#home" },
-    { label: "Galerie", href: "#gallery" },
-    { label: "À propos", href: "#about" },
+    { label: "Simulateur", href: "#simulateur" },
+    { label: "Galerie", href: "#galerie" },
+    { label: "Avis", href: "#temoignages" },
+    { label: "FAQ", href: "#faq" },
     { label: "Contact", href: "#contact" }
   ];
 
@@ -17,10 +18,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
           <Logo />
-
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
               <a
@@ -32,8 +30,6 @@ const Header = () => {
               </a>
             ))}
           </nav>
-
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden text-stone-700"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -41,8 +37,6 @@ const Header = () => {
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
-
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 animate-fade-in">
             {navItems.map((item) => (
