@@ -1,33 +1,30 @@
-
 const Logo = ({ className = "" }: { className?: string }) => {
   return (
     <div className={`flex items-center ${className}`}>
-      <svg 
-        width="40" 
-        height="40" 
-        viewBox="0 0 40 40" 
-        fill="none" 
+      <svg
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="mr-3"
       >
         <rect width="40" height="40" rx="8" fill="url(#gradient)" />
-        <path 
-          d="M12 28L20 12L28 28H24L22 24H18L16 28H12ZM19 20L21 16L23 20H19Z" 
-          fill="white" 
-        />
+        <circle cx="20" cy="20" r="6" fill="white" />
+        <rect x="12" y="10" width="16" height="8" rx="2" fill="white" />
         <defs>
           <linearGradient id="gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#D97706" />
-            <stop offset="1" stopColor="#92400E" />
+            <stop stopColor="#fef3c7" />
+            <stop offset="1" stopColor="#fbcfe8" />
           </linearGradient>
         </defs>
       </svg>
       <div className="flex flex-col">
-        <span className="text-xl font-bold bg-gradient-to-r from-amber-600 to-stone-700 bg-clip-text text-transparent">
-          SculptureByWanner
+        <span className="text-xl font-bold bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent">
+          Photobooth Nantes
         </span>
         <span className="text-xs text-stone-500 uppercase tracking-wider">
-          Artiste Sculpteur
+          Location borne photo
         </span>
       </div>
     </div>

@@ -1,8 +1,13 @@
-
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Proofs from "@/components/Proofs";
+import Advantages from "@/components/Advantages";
 import Gallery from "@/components/Gallery";
-import About from "@/components/About";
+import PriceSimulator from "@/components/PriceSimulator";
+import Info from "@/components/Info";
+import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
+import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -10,8 +15,14 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-stone-50 via-neutral-50 to-amber-50">
       <Header />
       <Hero />
+      <Proofs />
+      <Advantages />
       <Gallery />
-      <About />
+      <PriceSimulator />
+      <Info />
+      <Testimonials />
+      <FAQ />
+      <ContactForm />
       <Footer />
     </div>
   );
